@@ -7,7 +7,6 @@ let savedTask = localStorage.getItem("maintask");
 focusTask.innerText = savedTask;
 
 const addFocusTask = (event) => {
-  console.log(event);
   if (event.key === "Enter") {
     focusTask.innerText = event.target.value;
     localStorage.setItem("maintask", event.target.value);

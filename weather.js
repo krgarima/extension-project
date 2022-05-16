@@ -32,7 +32,7 @@ const error = () => {
 
 const getLocation = () => {
   if (!navigator.geolocation) {
-    console.log("Geolocation not supported by the browser");
+    alert("Geolocation is not supported by the browser");
     return;
   } else {
     navigator.geolocation.getCurrentPosition(success, error);

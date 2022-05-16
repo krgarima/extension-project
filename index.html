@@ -16,7 +16,10 @@
       />
     </div>
     <div class="container">
-      <header></header>
+      <header>
+        <span class="temperature"></span>
+        <img class="weather-icon" alt="weather icon" />
+      </header>
 
       <main>
         <div class="userNameInput">
@@ -24,17 +27,27 @@
           <input type="text" class="enterName" />
           <button id="addUserNameBtn">Continue</button>
         </div>
+
         <div class="display">
           <div class="time"></div>
           <h1 class="welcome-msg">
             <span class="salutation"></span> <span class="displayName"></span>
           </h1>
+
+          <h2>What's your main focus for today?</h2>
+          <input type="text" class="enterMainTask" />
+          <p class="mainFocus">
+            Today my main focus is <span class="focusTask"></span>
+          </p>
         </div>
+        <div class="quote"></div>
       </main>
     </div>
 
     <script src="username.js"></script>
     <script src="time.js"></script>
     <script src="mainFocus.js"></script>
+    <script src="weather.js"></script>
+    <script src="quote.js"></script>
   </body>
 </html>

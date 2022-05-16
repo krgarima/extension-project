@@ -5,6 +5,12 @@
   color: white;
 }
 
+:root {
+  --background-color1: rgba(0, 0, 0, 0.316);
+  --background-color2: rgba(0, 0, 0, 0.426);
+  --background-color3: rgba(0, 0, 0, 0.419);
+}
+
 body {
   font-size: 62.5%;
 }
@@ -29,7 +35,7 @@ header {
 .temperature,
 .weather-icon {
   font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.316);
+  background-color: var(--background-color1);
   padding: 1rem;
   border-radius: 50%;
 }
@@ -50,7 +56,7 @@ main {
 .display {
   margin: 3rem;
   display: none;
-  background-color: rgba(0, 0, 0, 0.316);
+  background-color: var(--background-color1);
 }
 
 .userNameInput {
@@ -117,7 +123,7 @@ footer {
 
 .todoList {
   width: 28vw;
-  background-color: rgba(0, 0, 0, 0.426);
+  background-color: var(--background-color2);
   margin: 5px;
   padding: 1rem;
   display: flex;
@@ -150,12 +156,12 @@ footer {
 }
 
 #push:hover {
-  background-color: rgba(0, 0, 0, 0.419);
+  background-color: var(--background-color3);
 }
 
 .quote {
   position: absolute;
   bottom: 12rem;
   font-size: 1.3rem;
-  background-color: rgba(0, 0, 0, 0.316);
+  background-color: var(--background-color1);
 }

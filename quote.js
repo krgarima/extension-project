@@ -2,10 +2,10 @@ const quote = document.querySelector(".quote");
 
 const generateRandomQuote = () => {
   try {
-    fetch("https://zenquotes.io/api/quotes")
+    fetch("https://type.fit/api/quotes")
       .then((response) => response.json())
       .then((data) => {
-        quote.innerText = data[Math.floor(Math.random() * 50)].q;
+        quote.innerText = data[Math.floor(Math.random() * 50)].text;
       });
   } catch (error) {
     alert(error);

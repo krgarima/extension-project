@@ -103,9 +103,11 @@ input {
 .userNameInput button {
   width: 30%;
   margin: 1rem 13rem;
-  padding: 2px;
+  padding: 4px;
   border: none;
   font-weight: 500;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 .display .time,

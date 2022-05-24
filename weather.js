@@ -9,6 +9,7 @@ const generateWeatherData = (weatherApi) => {
         temp.innerText = Math.round(data.current.temp) + "°";
         imgURL = `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`;
         weatherIcon.src = imgURL;
+        console.log(data);
       });
   } catch (error) {
     alert(error);

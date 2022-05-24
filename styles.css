@@ -26,9 +26,10 @@ body {
   z-index: -1;
 }
 
-header {
+header,
+.weather {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 10vh;
 }
 
@@ -40,10 +41,37 @@ header {
   border-radius: 50%;
 }
 
+.icons {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.icons img {
+  height: 3rem;
+  margin-top: 1rem;
+  background-color: var(--background-color1);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.searchGoogle,
+.searchYoutube,
+.searchMaps {
+  width: 50vw;
+  padding: 5px 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin-left: 6rem;
+  display: none;
+  margin-top: 3rem;
+}
+
 /* main */
 
 main {
-  min-height: 68vh;
+  min-height: 67vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +119,9 @@ p {
 .display input {
   border: none;
   border-bottom: 1px solid black;
-  padding: 3px;
+  padding: 8px;
+  margin-left: 5.5rem;
+  border-radius: 1rem;
 }
 
 .time {
@@ -101,6 +131,8 @@ p {
 
 .mainFocus {
   font-size: 1.2rem;
+  max-width: 25ch;
+  padding: 5px;
 }
 
 .myInput,
@@ -109,7 +141,8 @@ p {
 #tasks,
 #addUserNameBtn,
 .enterName,
-.enterMainTask {
+.enterMainTask,
+.searchBar input {
   color: black;
 }
 

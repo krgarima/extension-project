@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Efficacious",
   "author": "Garima",
-  "version": "1.0",
+  "version": "2.0",
   "description": "A browser extension that will help you focus and increase your work productivity",
   "icons": {
     "128": "assets/icon128.png.png",

@@ -10,6 +10,7 @@ const addFocusTask = (event) => {
   if (event.key === "Enter") {
     focusTask.innerText = event.target.value;
     localStorage.setItem("maintask", event.target.value);
+    enterMainTask.value = "";
   }
 };
 
